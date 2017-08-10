@@ -1,9 +1,19 @@
 $(document).ready(function(){
-  var age=parseInt(prompt("Please enter your age"));
-
-    if (age >= 18) {
-      $('#over18').show();
-    } else {
-      $("#under18").show();
+  $("#form").submit(function(){
+    event.preventDefault();
+  var animalType = $("#animal").val();
+    if (animalType === "snake") {
+      $("#snake").slideToggle();
+      $("#insect").hide();
+      $("#turtle").hide();
+    } else if (animalType === "insect") {
+      $("#insect").slideToggle();
+      $("#snake").hide();
+      $("#turtle").hide();
+    } else if (animalType === "turtle") {
+      $("#turtle").slideToggle();
+      $("#snake").hide();
+      $("#insect").hide();
     }
+  });
 });

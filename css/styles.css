@@ -1,7 +1,3 @@
-#over18 {
-  display:none;
-}
-
-#under18 {
+#snake, #insect, #turtle {
   display:none;
 }

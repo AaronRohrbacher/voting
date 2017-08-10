@@ -4,11 +4,28 @@
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <title>Voting is fun!</title>
+    <title>Animals are like so dumb!</title>
   </head>
   <body>
-    <h1>Voting stuff!</h1>
-      <p id="over18">You're old enough to vote! <a href="http://www.vote.org/">Here's</a> where to register.</p>
-      <p id="under18">You are too young for the voting!</p>
+    <form id ="form">
+    <select class="form-control" id="animal">
+      <option value="snake">Snakes</option>
+      <option value="insect">Insect</option>
+      <option value="turtle">Turtle</option>
+    </select>
+    <button type="submit" id="button">Choose!</button>
+    </form>
+    <div id="snake">
+    <h2>Snake</h2>
+    <img src="snake.jpg">
+    </div>
+    <div id="insect">
+      <h2>Insect</h2>
+      <img src="insect.jpg">
+    </div>
+    <div id="turtle">
+      <h2>Turtle</h2>
+      <img src="turtle.jpg">
+    </div>
   </body>
 </html>
